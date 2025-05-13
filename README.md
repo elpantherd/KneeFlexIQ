@@ -1,6 +1,8 @@
-KneeFlexIQ  ![License: MIT](https://img.shields.io/badge/license-MIT-green)
-
+## KneeFlexIQ  ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ---
+Empowering knee rehabilitation with smart sensors and cloud-powered ML. Real-time feedback, seamless IoT integration, and AWS-driven insights for a stronger recovery.
+A complete end-to-end solution for post-surgery knee rehabilitation combining wearable hardware with a cloud-based machine learning pipeline.
+
 ## 🔍 Project Overview
 **KneeFlexIQ** integrates an ESP8266/Arduino wearable device with multiple sensors (flex sensor, MPU6050, etc.) and an AWS-powered machine learning backend. It collects motion data, classifies knee exercise quality (correct, too much, too little), and delivers real-time feedback via OLED, buzzer, and Bluetooth.
 
