@@ -60,8 +60,7 @@ Key components:
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/your-username/flex-sensor-ml-rehab.git
-   cd flex-sensor-ml-rehab
+   git clone https://github.com/elpantherd/KneeFlexIQ.git
   
 2. **Install dependencies**
    ```bash
