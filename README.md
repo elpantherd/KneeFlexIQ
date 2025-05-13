@@ -62,15 +62,18 @@ Key components:
 1. **Clone the repository**  
    ```bash
    git clone https://github.com/elpantherd/KneeFlexIQ.git
-  
+   ```
+   
 2. **Install dependencies**
    ```bash
    npm install -g aws-cdk
+   ```
    
 3. **Configure AWS credentials**
    ```bash
    aws configure
----
+   ```
+
 ## 🛠️ Hardware Setup
 
 - **RehabDevice.ino**  
@@ -82,14 +85,64 @@ Key components:
   - Set `ssid`, `password`, `api_url`  
   - Upload via Arduino IDE
 
----
+
 
 ## 🚀 Upload Training Data
 
 ```bash
 python upload_data.py
+```
 
+## 🤖 Train & Deploy ML Model
 
+```bash
+python train_and_deploy.py
+```
 
+## ☁️ Deploy Cloud Infra
+```bash
+cd cdk_app
+cdk bootstrap
+cdk deploy
+```
+Remember to update flex_sensor.ino with the provided API URL.
 
+## 🔧 Configure Lambda
+
+Set ENDPOINT_NAME in lambda/index.py to your SageMaker endpoint
+```bash
+cdk deploy
+```
+
+---
+
+## 🔧 Customization
+1. Replace train.csv with your dataset (flex_value, label)
+
+2. Tune train.py hyperparameters (e.g., n_estimators, max_depth)
+
+3. Add sensors in knee.flex_iq.ino & update the cloud pipeline
+
+4. Integrate a mobile app via Bluetooth or extend the API for additional feedback
+---
+
+## 🐞 Troubleshooting
+1. S3 bucket name: Must be globally unique
+
+2. SageMaker errors: Check IAM permissions
+
+3. WiFi issues: Verify SSID/password and signal strength
+
+4. API errors: Ensure ENDPOINT_NAME and api_url match your deployments
+
+5. Arduino errors: Confirm wiring, library versions, and review Serial Monitor logs
+
+6. Check CloudWatch (Lambda) and SageMaker logs for deeper insights.
+
+## 📄 License
+This project is licensed under the MIT License. [LICENSE](LICENSE)
+
+## Contact Information
+
+For questions or support, contact TEAM GLITCH at [dthayalan760@gmail.com]
  
