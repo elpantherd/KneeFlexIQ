@@ -62,10 +62,34 @@ Key components:
    ```bash
    git clone https://github.com/your-username/flex-sensor-ml-rehab.git
    cd flex-sensor-ml-rehab
-   
+  
 2. **Install dependencies**
-  ```bash
-  npm install -g aws-cdk
+   ```bash
+   npm install -g aws-cdk
+   
+3. **Configure AWS credentials**
+   ```bash
+   aws configure
+---
+## 🛠️ Hardware Setup
+
+- **RehabDevice.ino**  
+  - Wire flex sensor (A0), MPU6050, OLED, buzzer, SD, Bluetooth, button, battery monitor  
+  - Upload via Arduino IDE
+
+- **flex_sensor.ino**  
+  - Wire flex sensor to ESP8266 A0  
+  - Set `ssid`, `password`, `api_url`  
+  - Upload via Arduino IDE
+
+---
+
+## 🚀 Upload Training Data
+
+```bash
+python upload_data.py
 
 
 
+
+ 
