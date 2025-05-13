@@ -30,7 +30,6 @@ Key components:
 ![too_little](https://github.com/user-attachments/assets/0db9dcf5-8fd9-4d8c-93d3-95b928c5533a)
 ![too_much](https://github.com/user-attachments/assets/ab383319-de7f-468a-9b09-43015234b8ef)
 ![crct](https://github.com/user-attachments/assets/4cd00a7a-07f0-4972-868a-b01bc1961152)
-![op](https://github.com/user-attachments/assets/77bb472b-ad8a-42e9-a602-d7c824f3ba18)
 
 ---
 ## 🛠️ Prerequisites
