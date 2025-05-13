@@ -1,5 +1,4 @@
-# KneeFlexIQ  ![License: MIT](https://img.shields.io/badge/license-MIT-green)
-
+KneeFlexIQ  ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 Empowering knee rehabilitation with smart sensors and cloud-powered ML. Real-time feedback, seamless IoT integration, and AWS-driven insights for a stronger recovery.
 A complete end-to-end solution for post-surgery knee rehabilitation combining wearable hardware with a cloud-based machine learning pipeline.
 ---
