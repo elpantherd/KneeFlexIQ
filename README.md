@@ -6,6 +6,8 @@ A complete end-to-end solution for post-surgery knee rehabilitation combining we
 ## 🔍 Project Overview
 **KneeFlexIQ** integrates an ESP8266/Arduino wearable device with multiple sensors (flex sensor, MPU6050, etc.) and an AWS-powered machine learning backend. It collects motion data, classifies knee exercise quality (correct, too much, too little), and delivers real-time feedback via OLED, buzzer, and Bluetooth.
 
+![sys_arch](https://github.com/user-attachments/assets/b9053f0b-15df-4b76-bb90-3673a207fb69)
+
 Key components:
 - **Hardware**: ESP8266-based Arduino device collects sensor data, runs local rule-based classification, and streams data.
 - **Cloud ML**: Random Forest model trained/deployed on AWS SageMaker for advanced classification.
